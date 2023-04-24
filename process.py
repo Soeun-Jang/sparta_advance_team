@@ -15,8 +15,8 @@ def bar():
 def baz():
     print('This is baz')
     print("my pid is", os.getpid())
-  
-  
+    
+
 if __name__ == '__main__': #현재 모듈이 메인 모듈일 경우 아래 코드가 실행
   print("parent process", os.getpid())
   child1 = Process(target=foo).start() 
